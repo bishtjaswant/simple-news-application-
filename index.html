@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news app</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+    <!-- navigation bar  -->
+    <nav>
+        <div class="main_nav container">
+            <a href="">
+                <img src="./assets/logo/logo.png" alt="logo">
+            </a>
+            <div class="nav_link">
+                <ul>
+                    <li><a href="#" id="ipl" onclick="searchNavLinkNews('ipl')">IPL</a></li>
+                    <li><a href="#" id="finance" onclick="searchNavLinkNews('finance')">finance</a></li>
+                    <li><a href="#" id="market" onclick="searchNavLinkNews('market')">market</a></li>
+                    <li><a href="#" id="economics" onclick="searchNavLinkNews('economics')">economics</a></li>
+                    <li><a href="#" id="hot" onclick="searchNavLinkNews('hot')">hot masala</a></li>
+                    <li><a href="#" id="politics" onclick="searchNavLinkNews('politics')">politics</a></li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="search" name="" placeholder="eg news" id="search_input">
+                <button class="btn" type="button" id="search_btn">search </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navigation bar  -->
+
+
+
+
+
+    <!-- main section of the page -->
+    <main  class="" id="card_container">   </main>
+    <!-- main section of the page -->
+    
+    <!-- card template  -->
+    <template id="template_news_card" >
+        <!-- card  -->
+                <div class="card">
+                    <div class="card_img">
+                        <img id="card_img" src="https://via.placeholder.com/400x200" alt="">
+                    </div>
+                    <div class="card_content">
+                        <h2 id="title" class="title">title</h2>
+                        <h6 class="news_source" id="news_source">news source</h6>
+                        <p id="desc" class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        <a href="" class="btn" id="read_more_btn">read more</a>
+                    </div>
+                </div>
+                <!-- card  -->
+    </template>
+    <!-- card template  -->
+
+
+    <!-- error template  -->
+
+    <div id="error_rendering"></div>
+    
+    <template id="template_error">
+        <div class="error_template">
+            <h2 id="error_message"> </h2>
+            <p id="error_message_text"> </p>
+        </div>
+    </template>
+
+    <!-- error template  -->
+
+    
+
+
+    <!-- footer section of the page -->
+    <footer>
+        <p> news app &copy; 2020 </p>
+        <p>all right reserved</p>
+        <div class="social">
+            <a href=""> <i class="ri-facebook-line"></i> </a>
+            <a href=""> <i class="ri-instagram-line"></i> </a>
+            <a href=""> <i class="ri-twitter-line"></i> </a>
+            <a href=""><i class="ri-youtube-line"></i> </a>
+        </div>
+    </footer>
+    <!-- footer section of the page -->
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

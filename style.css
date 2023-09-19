@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+    /* font  */
+  --font-family: "Poppins", sans-serif;
+
+
+    /* font weight  */
+  --font-weight-200: 200;
+  --font-weight-400: 400;
+  --font-weight-600: 600;
+
+  /* colors  */
+  --primary-text-color: #183b56;
+  --secondary-text-color: #577592;
+  --accent-color: #2294ed;
+  --accent-color-dark: #1d69a3; 
+  --text-color: #fafafa;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+} */
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-200);
+ 
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline:  auto;
+}
+
+.error_template {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+  row-gap: 2px;
+}
+
+.active {
+    text-decoration: underline;
+  color: var(--accent-color);
+}
+
+nav {
+    background-color: #f3faff;
+    box-shadow: 0 0 .3125rem #bbd0e2;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+
+    overflow: hidden;
+}
+
+.main_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.main_nav img {
+  width: 100%;
+  object-fit: cover;
+}
+.main_nav a {
+  flex-basis: 15%;
+}
+
+.nav_link ul {
+  font-size: .875rem;
+  font-weight: var(--font-weight-600);
+  color: var(--primary-text-color);
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1rem;
+}
+
+ .nav_link  li a:hover {
+  color: var(--accent-color-dark);
+}
+
+.nav_link  li a:active {
+    color: red;
+  }
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: .125rem;
+}
+
+.search-bar input[type="search"] {
+  padding: 10px 5px;
+  border: .125rem solid var(--primary-text-color);
+  outline: none;
+  border-radius: 4px;
+}
+
+.search-bar input[type="search"]::placeholder {
+  font-size: .875rem;
+  font-weight: var(--font-weight-200);
+}
+
+.search-bar input[type="search"]:focus {
+  outline: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+    color: var(--text-color);   
+  text-align: center;
+  text-transform: capitalize;
+  /* font-size: inherit; */
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+    transition: all 0.3s linear;
+}
+
+.btn:hover {
+  background-color: var(--accent-color-dark);
+}
+
+
+
+
+/* main css  */
+main {
+    margin-top: 9.375rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: .75rem;
+
+
+}
+
+main .card { 
+    box-shadow:  0px 10px 15px -3px #F5F5F5;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+
+    width: 450px;
+    min-height: 400px;
+}
+
+.card .card_img img {
+    width: 100%;
+}
+
+main .card .title {
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-600);
+    color: var(--primary-text-color);
+    text-transform: capitalize;
+    margin-bottom: .5rem;
+}
+main .card .news_source {
+    background-color: red;
+    padding: .125rem .5rem;
+    border-radius: 1px;
+    width: fit-content;
+    font-size: .875rem;
+    font-weight: var(--font-weight-600);
+    text-transform: capitalize;
+    color: var(--text-color);
+    margin: .5rem 0;
+}
+main .card .desc {
+    font-size: .875rem;
+    font-weight: var(--font-weight-200);
+    color: var(--secondary-text-color);
+    margin-bottom: 1.5625rem;
+}
+
+
+
+/* main css  */
+
+
+
+
+
+/* footer  */
+footer{
+    background-color: var(--primary-text-color);
+    color: var(--text-color);
+    text-transform: capitalize;
+    box-shadow: 0 0 .3125rem #bbd0e2;
+    font-weight: var(--font-weight-600);
+     
+    padding: 1rem 1.5rem ;
+    margin-top: 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .social{
+    display: flex;
+    column-gap: .375rem;
+}
+
+footer .social a {
+    transition: all 0.3s ease;
+    color: var(--text-color);;
+    font-size: 1.25rem;
+}
+
+footer .social a:hover {
+    color: var(--accent-color);
+    scale: 1.8;
+}
+/* footer  */
